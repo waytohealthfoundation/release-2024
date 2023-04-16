@@ -247,13 +247,10 @@
 dialog {
   font-family: 'Raleway', sans-serif;
   color: var(--bg-color);
-  pointer-events: none;
-  opacity: 0;
   transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border-color: var(--accent-color);
   transform: translateX(-100%);
 }
