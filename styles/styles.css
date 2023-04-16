@@ -257,6 +257,10 @@ dialog {
   transform: translateX(-100%);
 }
 
+dialog button {
+  touch-action: manipulation;
+}
+
 dialog a {
   color: var(--bg-color);  
 }
