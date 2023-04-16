@@ -1,0 +1,126 @@
+
+@media only screen and (min-width: 600px) {
+  .main {
+    background-position: center;
+  }
+
+  .main::before {
+    font-size: 5.625rem;
+    font-size: 6.25rem;
+    top: 200px;
+  }
+
+  .main__call-to-action {
+    bottom: 15px;
+    font-size: 2.625rem;
+  }
+}
+
+@media only screen and ( min-width: 640px) {
+  .nav-links {
+    display: block;
+    z-index: 1;
+    background: transparent;
+    background-color: transparent;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .flex-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .nav-links {
+    height: auto;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-link {
+    display: inline-block;
+    border: none;
+  }
+
+  .whoWeAre__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .whoWeAre__header-text::after {
+    content: '';
+    background-color: #fefeff;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+  }
+  
+  .whoWeAre__body,
+  .weServe__body {
+    text-align: center;
+  }
+
+  .weServe__header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .weServe__header-img {
+    flex: 2;
+    margin: 0;
+  }
+
+  .weServe__header-text {
+    flex: 1;
+  }
+
+  .contactUs .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contactUs .contact-wrapper .contact-address, 
+  .contactUs .contact-wrapper .contact-phone, 
+  .contactUs .contact-wrapper .contact-email {
+    flex: 1
+  }
+
+  dialog[open] {
+    padding: 20px 50px;
+  }
+}
+
+@media only screen and ( min-width: 1020px) {
+  .nav-links ul {
+    font-size: 20px;
+  }
+
+  /* hover slider */
+  .nav-link::after {
+    margin-top: 24px;
+  }  
+
+  .nav-header { flex: 2; }
+  .nav-links { flex: 2;  }
+
+  .whoWeAre__header .whoWeAre__header-text,
+  .weServe__header .weServe__header-text,
+  .missionTrips__header .missionTrips__header-text, 
+  .contactUs .contactUs__header-text {
+    font-size: 75px;
+  }
+}
