@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;400&display=swap');
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 :root {
   --bg-color: #2e2d33;
   --font-light: #fefeff;

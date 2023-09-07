@@ -1,50 +1,65 @@
-const body = document.body
-const navToggle = document.querySelector('#navToggle')
-const nav = document.querySelector('#navLinks')
-const viewSize = window.innerWidth
+const body = document.body;
+const navToggle = document.querySelector("#navToggle");
+const nav = document.querySelector("#navLinks");
+const viewSize = window.innerWidth;
 
-let lastScroll = 0
+let lastScroll = 0;
 
-window.addEventListener('scroll', () => {
-  const currentScroll = window.scrollY
-  
-  if (currentScroll <= 0 ) return body.classList.remove('scroll-up')  
-  if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {
-    body.classList.remove('scroll-up')
-    body.classList.add('scroll-down')
-  } else if ( currentScroll < lastScroll && body.classList.contains('scroll-down')) {
-    body.classList.remove('scroll-down')  
-    body.classList.add('scroll-up')
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+
+  if (currentScroll <= 0) return body.classList.remove("scroll-up");
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up");
+    body.classList.add("scroll-down");
+  } else if (
+    currentScroll < lastScroll &&
+    body.classList.contains("scroll-down")
+  ) {
+    body.classList.remove("scroll-down");
+    body.classList.add("scroll-up");
   }
-  lastScroll = currentScroll
-})
+  lastScroll = currentScroll;
+});
 
-if (viewSize > 920 && nav.classList.contains('nav-active')) { nav.classList.remove('nav-active') }
-navToggle.addEventListener('click', () => { nav.classList.toggle('nav-active') })
-nav.addEventListener('click', () => { nav.classList.toggle('nav-active') })
+if (viewSize > 920 && nav.classList.contains("nav-active")) {
+  nav.classList.remove("nav-active");
+}
+navToggle.addEventListener("click", () => {
+  nav.classList.toggle("nav-active");
+});
+nav.addEventListener("click", () => {
+  nav.classList.toggle("nav-active");
+});
 
+// *** POP-UP MODALS ***
 
-// *** POP-UP MODALS *** 
+const btnFormsDownloads = document.getElementById("formsDownloads");
+const dialogFormsDownloads = document.getElementById("formsDownloadsDialog");
+const closeFD = document.getElementById("closeFD");
 
-const btnWhoWeAre = document.getElementById('whoWeAreReadMore')
-const btnWeServe = document.getElementById('weServeReadMore')
-const closeWWA = document.getElementById('closeWWA')
-const closeWS = document.getElementById('closeWS')
-const closeFD = document.getElementById('closeFD')
-const dialogWhoWeAre = document.getElementById('whoWeAreDialog')
-const dialogWeServe = document.getElementById('weServeDialog')
-const btnFormsDownloads = document.getElementById('formsDownloads')
-const dialogFormsDownloads = document.getElementById('formsDownloadsDialog')
+btnFormsDownloads.addEventListener("click", () => {
+  dialogFormsDownloads.showModal();
+});
+closeFD.addEventListener("click", () => {
+  dialogFormsDownloads.close();
+});
 
-btnWhoWeAre.addEventListener('click', () => { dialogWhoWeAre.showModal() })
-btnWeServe.addEventListener('click', () => { dialogWeServe.showModal() })
-btnFormsDownloads.addEventListener('click', () => { dialogFormsDownloads.showModal() })
-closeFD.addEventListener('click', () => {dialogFormsDownloads.close() })
-closeWS.addEventListener('click', () => { dialogWeServe.close() })
-closeWWA.addEventListener('click', () => { dialogWhoWeAre.close() })
+//  *** Accordions ***
 
+const toggleClasses = (element, remove, add) => {
+  element.classList.remove(remove);
+  element.classList.add(add);
+};
 
-
-
-
-
+const toggleAccordion = (element, open, close) => {
+  if (Array.from(element.classList).includes("expanded")) {
+      element.parentElement.scrollIntoView({
+        behavior: "instant",
+        block: "start",
+      });
+    toggleClasses(element, open, close);
+  } else {
+    toggleClasses(element, close, open);
+  }
+};

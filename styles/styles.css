@@ -162,11 +162,32 @@
   color: var(--accent-color);
 }
 
+.whoWeAre__body {
+  position: relative;
+}
+
 .whoWeAre__body p {
   font-family: 'Raleway', sans-serif; 
   text-align: left;
   margin: 10px  0 30px;
   padding: 0 10px;
+
+}
+
+.contracted {
+  max-height: 290px;
+  overflow: hidden;
+}
+
+.contracted-2 {
+  max-height: 190px;
+  overflow: hidden;
+}
+
+.expanded {
+  max-height:2000px;
+  overflow: hidden;
+  transition: all 1s linear;
 }
 
 .whoWeAre__header-text {
@@ -266,7 +287,6 @@ dialog a:hover {
 }
 
 dialog[open] {
-  position: relative;
   transform: translateX(0%);
   opacity: 1;
   pointer-events: inherit;
@@ -279,6 +299,7 @@ dialog[open] {
 
 dialog::backdrop {
   background-color: var(--font-light);
+  backdrop-filter: blur(1px)
 }
 
 .close-btn {
@@ -357,7 +378,7 @@ dialog::backdrop {
   z-index: -1;
 }
 
-.videos-carousel .item-video iframe {
+.videos-carousel .item-title a {
   pointer-events: auto;
 }
 .carousel-item.active {

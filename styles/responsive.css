@@ -14,6 +14,16 @@
     bottom: 15px;
     font-size: 2.625rem;
   }
+
+  .contracted {
+    max-height: 195px;
+    overflow: hidden;
+  }
+  
+  .contracted-2 {
+    max-height: 145px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and ( min-width: 640px) {
@@ -102,6 +112,16 @@
   dialog[open] {
     padding: 20px 50px;
   }
+
+  .contracted {
+    max-height: 170px;
+    overflow: hidden;
+  }
+  
+  .contracted-2 {
+    max-height: 125px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and ( min-width: 1020px) {
@@ -122,5 +142,15 @@
   .missionTrips__header .missionTrips__header-text, 
   .contactUs .contactUs__header-text {
     font-size: 75px;
+  }
+
+  .contracted {
+    max-height: 125px;
+    overflow: hidden;
+  }
+  
+  .contracted-2 {
+    max-height: 100px;
+    overflow: hidden;
   }
 }
