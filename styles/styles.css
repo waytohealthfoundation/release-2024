@@ -270,27 +270,6 @@
   color: #64adbf;
 }
 
-
-
-/* .modal-btn::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  margin-top: 18px;
-  right: 0;
-  background-color: var(--accent-color);
-  transition: all 0.2s ease;
-}
-
-.modal-btn:hover::after {
-  width: 100%;
-  left: 0;
-  background-color: var(--accent-color);
-} */
-
-
-
 dialog {
   font-family: 'Raleway', sans-serif;
   color: var(--bg-color);
