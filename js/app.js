@@ -52,14 +52,23 @@ const toggleClasses = (element, remove, add) => {
   element.classList.add(add);
 };
 
-const toggleAccordion = (element, open, close) => {
+function toggleAccordion(element, open, close) {
   if (Array.from(element.classList).includes("expanded")) {
-      element.parentElement.scrollIntoView({
-        behavior: "instant",
-        block: "start",
-      });
+    element.parentElement.scrollIntoView({
+      behavior: "instant",
+      block: "start",
+    });
     toggleClasses(element, open, close);
   } else {
     toggleClasses(element, close, open);
   }
+
+  toggleButtonText(element);
+}
+
+const toggleButtonText = (element) => {
+ let newText = element.nextElementSibling.innerText === "Read More..."
+    ? "Read Less \u2303"
+    : "Read More...";
+    element.nextElementSibling.innerText = newText;
 };

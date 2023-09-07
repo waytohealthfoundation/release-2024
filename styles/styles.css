@@ -175,12 +175,12 @@
 }
 
 .contracted {
-  max-height: 290px;
+  max-height: 282px;
   overflow: hidden;
 }
 
 .contracted-2 {
-  max-height: 190px;
+  max-height: 185px;
   overflow: hidden;
 }
 
@@ -262,8 +262,34 @@
   pointer-events: auto;
   cursor: pointer;
   touch-action: manipulation;
-  padding: 10px 20px;
+  padding: 5px 20px 40px 12px;
+  position: relative;
 }
+
+.modal-btn:hover {
+  color: #64adbf;
+}
+
+
+
+/* .modal-btn::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  margin-top: 18px;
+  right: 0;
+  background-color: var(--accent-color);
+  transition: all 0.2s ease;
+}
+
+.modal-btn:hover::after {
+  width: 100%;
+  left: 0;
+  background-color: var(--accent-color);
+} */
+
+
 
 dialog {
   font-family: 'Raleway', sans-serif;
