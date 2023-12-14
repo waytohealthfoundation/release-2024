@@ -1,9 +1,19 @@
+import { buildCarousel, makeCaroButtons } from "./buildCarousel.js";
+
 const body = document.body;
 const navToggle = document.querySelector("#navToggle");
 const nav = document.querySelector("#navLinks");
 const viewSize = window.innerWidth;
 
 let lastScroll = 0;
+
+const caroHolder = document.getElementById("videos-carousel-wrapper"); // This is a slightly safer way to get a single reference to the carousel holder
+let caro = buildCarousel();
+
+caroHolder.appendChild(caro);
+
+let caroButtons = makeCaroButtons();
+caroHolder.appendChild(caroButtons);
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
@@ -67,8 +77,9 @@ function toggleAccordion(element, open, close) {
 }
 
 const toggleButtonText = (element) => {
- let newText = element.nextElementSibling.innerText === "Read More..."
-    ? "Read Less \u2303"
-    : "Read More...";
-    element.nextElementSibling.innerText = newText;
+  let newText =
+    element.nextElementSibling.innerText === "Read More..."
+      ? "Read Less \u2303"
+      : "Read More...";
+  element.nextElementSibling.innerText = newText;
 };
