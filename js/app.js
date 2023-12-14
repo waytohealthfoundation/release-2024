@@ -56,7 +56,6 @@ closeFD.addEventListener("click", () => {
 });
 
 //  *** Accordions ***
-
 const toggleClasses = (element, remove, add) => {
   element.classList.remove(remove);
   element.classList.add(add);
