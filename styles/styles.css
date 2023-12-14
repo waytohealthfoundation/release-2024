@@ -434,6 +434,15 @@ dialog::backdrop {
   -webkit-backdrop-filter: blur(2px);
 }
 
+.site-intro-text div {
+  font-size: xx-large;
+  padding: 0 10px;
+}
+
+.site-intro-text hr {
+  margin: 0 10px;
+}
+
 .container__slide-buttons {
   margin-top: 100px;
   background: none;
