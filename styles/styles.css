@@ -28,7 +28,7 @@
 }
 
 .nav-header span {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .nav-header {
@@ -61,7 +61,7 @@
 
 /* hover slider */
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 3px;
@@ -98,7 +98,7 @@
   margin: 0;
   position: relative;
   background-color: var(--bg-color);
-  background-image: url('../assets/hero_boy-semi-final-2.png');
+  background-image: url("../assets/hero_boy-semi-final-2.png");
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
   background-size: auto;
@@ -117,7 +117,7 @@
 }
 
 .main::before {
-  content: 'WAY TO HEALTH';
+  content: "WAY TO HEALTH";
   position: absolute;
   top: 250px;
   transform: translate(0%);
@@ -126,7 +126,7 @@
 }
 
 .main__call-to-action {
-  content: 'Donate';
+  content: "Donate";
   position: absolute;
   bottom: 50px;
   transform: translate(0%);
@@ -135,20 +135,20 @@
   color: var(--font-light);
   background-color: var(--call-to-action);
   cursor: pointer;
-  transition: all 0.4s ease-in-out; 
+  transition: all 0.4s ease-in-out;
 }
 
 .main__call-to-action:hover {
   display: inline-block;
-  color: var(--accent-color); 
+  color: var(--accent-color);
   transform: translate(7px);
-} 
+}
 
 .main__sub p {
-  font-family: 'Raleway', sans-serif; 
+  font-family: "Raleway", sans-serif;
   font-size: 0.75rem;
   text-align: center;
-  margin: 0  0 30px;
+  margin: 0 0 30px;
 }
 
 .whoWeAre__header {
@@ -167,11 +167,10 @@
 }
 
 .whoWeAre__body p {
-  font-family: 'Raleway', sans-serif; 
+  font-family: "Raleway", sans-serif;
   text-align: left;
-  margin: 10px  0 30px;
+  margin: 10px 0 30px;
   padding: 0 10px;
-
 }
 
 .contracted {
@@ -185,7 +184,7 @@
 }
 
 .expanded {
-  max-height:2000px;
+  max-height: 2000px;
   overflow: hidden;
   transition: all 1s linear;
 }
@@ -202,13 +201,13 @@
 }
 
 .whoWeAre__text::after {
-  content: '';
+  content: "";
   position: absolute;
   transform: translate(0%);
-  width: 8rem;  
+  width: 8rem;
   height: 1px;
   background-color: var(--font-light);
-} 
+}
 
 .weServe {
   border-bottom: 1px solid var(--font-light);
@@ -237,9 +236,9 @@
 }
 
 .weServe__body p {
-  font-family: 'Raleway', sans-serif; 
+  font-family: "Raleway", sans-serif;
   text-align: left;
-  margin: 10px  0 30px;
+  margin: 10px 0 30px;
   padding: 0 10px;
 }
 
@@ -271,7 +270,7 @@
 }
 
 dialog {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--bg-color);
   transition: all 0.5s ease-in-out;
   border-color: var(--accent-color);
@@ -283,7 +282,7 @@ dialog button {
 }
 
 dialog a {
-  color: var(--bg-color);  
+  color: var(--bg-color);
 }
 
 dialog a:hover {
@@ -296,7 +295,7 @@ dialog[open] {
   opacity: 1;
   pointer-events: inherit;
   padding: 10px 25px;
-  line-height: 2; 
+  line-height: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,7 +303,7 @@ dialog[open] {
 
 dialog::backdrop {
   background-color: var(--font-light);
-  backdrop-filter: blur(1px)
+  backdrop-filter: blur(1px);
 }
 
 .close-btn {
@@ -326,16 +325,16 @@ dialog::backdrop {
   text-align: center;
 }
 
-.missionTrips__header  {
+.missionTrips__header {
   border-bottom: 1px solid var(--font-light);
   text-align: center;
   position: relative;
 }
 
 .missionTrips__body p {
-  font-family: 'Raleway', sans-serif; 
+  font-family: "Raleway", sans-serif;
   text-align: left;
-  margin: 10px  0 30px;
+  margin: 10px 0 30px;
   padding: 0 10px;
 }
 
@@ -350,6 +349,14 @@ dialog::backdrop {
   color: var(--accent-color);
 }
 
+/* Scripture Css */
+
+.scripture {
+  font-size: larger;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
 /* embeded video carousel */
 /* *********************** */
 
@@ -392,13 +399,17 @@ dialog::backdrop {
   opacity: 1;
 }
 
-.carousel-item.next, 
+.carousel-item.next,
 .carousel-item.prev {
   opacity: 0.25;
 }
 
-.carousel-item.prev { transform: translateX(-75%); }
-.carousel-item.next { transform: translateX(75%); }
+.carousel-item.prev {
+  transform: translateX(-75%);
+}
+.carousel-item.next {
+  transform: translateX(75%);
+}
 
 .carousel-item .item-title {
   margin-top: 20px;
@@ -412,16 +423,15 @@ dialog::backdrop {
 }
 
 .youtube iframe {
- 
-    width: 550px; 
-    height: 400px;
-    border: 1px solid #838385;
-    padding: 10px;
-    margin-left: 5px;
-    border-radius: 1%;
-    box-shadow: 0 8px 36px 0 #404045;
-    backdrop-filter: blur(2.0px);
-    -webkit-backdrop-filter: blur(2.0px);
+  width: 550px;
+  height: 400px;
+  border: 1px solid #838385;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 1%;
+  box-shadow: 0 8px 36px 0 #404045;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .container__slide-buttons {
@@ -444,8 +454,12 @@ dialog::backdrop {
   cursor: pointer;
 }
 
-.container__slide-buttons button:nth-child(1) { padding: 10px; }
-.container__slide-buttons button:nth-child(2) { padding: 10px; }
+.container__slide-buttons button:nth-child(1) {
+  padding: 10px;
+}
+.container__slide-buttons button:nth-child(2) {
+  padding: 10px;
+}
 
 .item-video {
   aspect-ratio: 16 / 9;
@@ -458,22 +472,22 @@ dialog::backdrop {
 }
 
 .contactUs {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   border-top: 1px solid var(--font-light);
   text-align: center;
 }
 
 .contactUs__header-text {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", cursive, sans-serif;
   font-size: 42px;
 }
 
 .contactUs__header-text span {
-  color: var(--accent-color);;
+  color: var(--accent-color);
 }
 
 .contactUs .contact-wrapper {
-  margin-top:  30px;  
+  margin-top: 30px;
 }
 
 .contactUs .contact-wrapper div {
@@ -515,11 +529,21 @@ footer .footer__socials span {
   flex: 1;
 }
 
-footer .footer__socials .socials-fb a { color: #1877f2; }
-footer .footer__socials .socials-tw a { color: #1c96e8; }
-footer .footer__socials .socials-ig a { color: #f65990; }
-footer .footer__socials .socials-wa a { color: #00c200; }
-footer .footer__socials .socials-yt a { color: #ff0000; }
+footer .footer__socials .socials-fb a {
+  color: #1877f2;
+}
+footer .footer__socials .socials-tw a {
+  color: #1c96e8;
+}
+footer .footer__socials .socials-ig a {
+  color: #f65990;
+}
+footer .footer__socials .socials-wa a {
+  color: #00c200;
+}
+footer .footer__socials .socials-yt a {
+  color: #ff0000;
+}
 
 footer .footer__text {
   margin-top: 30px;
@@ -527,12 +551,12 @@ footer .footer__text {
 }
 
 footer .footer__text span {
-  font-family: 'Bebas Neue', cursive, sans-serif; 
+  font-family: "Bebas Neue", cursive, sans-serif;
   color: var(--accent-color);
   font-size: 18px;
 }
 
 footer .footer__text {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
