@@ -415,6 +415,40 @@ dialog::backdrop {
   margin-top: 20px;
 }
 
+.how-to-help__header {
+  font-family: "Raleway", sans-serif;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.how-to-help__header-text {
+  line-height: 1.1;
+  font-size: 75px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  flex: 1;
+  font-weight: 400;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+}
+
+.how-to-help__header-text span {
+  color: var(--accent-color);
+}
+
+.how-to-help__body {
+  padding: 0 30px;
+}
+
+.how-to-help__body p {
+  margin: 30px 45px 20px 35px;
+  padding: 0 20px;
+  overflow-wrap: normal;
+  text-align: left;
+  font-weight: 500;
+}
+
 .youtube {
   height: 500px;
   display: flex;
