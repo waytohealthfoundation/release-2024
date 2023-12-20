@@ -477,6 +477,40 @@ dialog::backdrop {
   margin: 0 10px;
 }
 
+.upcoming-events__header {
+  font-family: "Raleway", sans-serif;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.upcoming-events__header-text {
+  line-height: 1.1;
+  font-size: 75px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  flex: 1;
+  font-weight: 400;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+}
+
+.upcoming-events__header-text span {
+  color: var(--accent-color);
+}
+
+.upcoming-events__body {
+  padding: 0 30px;
+}
+
+.upcoming-events__body p {
+  margin: 30px 45px 20px 35px;
+  padding: 0 20px;
+  overflow-wrap: normal;
+  text-align: left;
+  font-weight: 500;
+}
+
 .container__slide-buttons {
   margin-top: 100px;
   background: none;
