@@ -637,3 +637,23 @@ footer .footer__text {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
+
+/* ABOUT PAGE */
+
+.whoWeServe p {
+  text-align:left;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+}
+
+/* UTILITY CSS */
+
+.block-text {
+  margin: 10px 0 30px;
+  padding: 0 10px;
+}
+
+.block-text-header {
+  font-size: xx-large;
+  padding: 0 10px;
+}
