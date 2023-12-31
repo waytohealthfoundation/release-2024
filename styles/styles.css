@@ -430,7 +430,7 @@ dialog::backdrop {
   margin-bottom: 25px;
   flex: 1;
   font-weight: 400;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", cursive, sans-serif;
 }
 
 .how-to-help__header-text span {
@@ -492,7 +492,7 @@ dialog::backdrop {
   margin-bottom: 25px;
   flex: 1;
   font-weight: 400;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", cursive, sans-serif;
 }
 
 .upcoming-events__header-text span {
@@ -640,10 +640,33 @@ footer .footer__text {
 
 /* ABOUT PAGE */
 
-.whoWeServe p {
-  text-align:left;
+#whoWeServe {
+  margin-top: 15%;
+}
+
+#whoWeServe p {
+  text-align: left;
   font-family: "Raleway", sans-serif;
   text-align: left;
+}
+.boardMember_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boardMember_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--font-light);
+  border-radius: 10px;
+  box-shadow: 0 8px 36px 0 #404045;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 /* UTILITY CSS */
