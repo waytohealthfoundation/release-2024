@@ -97,7 +97,7 @@
   padding: 0;
   margin: 0;
   position: relative;
-  background-color: var(--bg-color);
+  background-color: rgba(46, 45, 51, .6);
   background-image: url("../assets/hero_boy-semi-final-2.png");
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
@@ -131,11 +131,14 @@
   bottom: 50px;
   transform: translate(0%);
   font-size: 1.375rem;
-  padding: 0.125rem 0.625rem;
+  padding: 0.2rem 0.625rem;
   color: var(--font-light);
   background-color: var(--call-to-action);
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+  width: 12%;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .main__call-to-action:hover {
