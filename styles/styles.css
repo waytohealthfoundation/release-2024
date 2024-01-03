@@ -61,7 +61,7 @@
 
 /* hover slider */
 .nav-link::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 3px;
@@ -98,7 +98,7 @@
   margin: 0;
   position: relative;
   background-color: var(--bg-color);
-  background-image: url("../assets/hero_boy-semi-final-2.png");
+  background-image: url('../assets/hero_boy-semi-final-2.png');
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
   background-size: auto;
@@ -117,7 +117,7 @@
 }
 
 .main::before {
-  content: "WAY TO HEALTH";
+  content: 'WAY TO HEALTH';
   position: absolute;
   top: 250px;
   transform: translate(0%);
@@ -126,7 +126,7 @@
 }
 
 .main__call-to-action {
-  content: "Donate";
+  content: 'Donate';
   position: absolute;
   bottom: 50px;
   transform: translate(0%);
@@ -145,7 +145,7 @@
 }
 
 .main__sub p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 0.75rem;
   text-align: center;
   margin: 0 0 30px;
@@ -167,7 +167,7 @@
 }
 
 .whoWeAre__body p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
   margin: 10px 0 30px;
   padding: 0 10px;
@@ -201,7 +201,7 @@
 }
 
 .whoWeAre__text::after {
-  content: "";
+  content: '';
   position: absolute;
   transform: translate(0%);
   width: 8rem;
@@ -236,7 +236,7 @@
 }
 
 .weServe__body p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
   margin: 10px 0 30px;
   padding: 0 10px;
@@ -270,7 +270,7 @@
 }
 
 dialog {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--bg-color);
   transition: all 0.5s ease-in-out;
   border-color: var(--accent-color);
@@ -332,7 +332,7 @@ dialog::backdrop {
 }
 
 .missionTrips__body p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
   margin: 10px 0 30px;
   padding: 0 10px;
@@ -416,7 +416,7 @@ dialog::backdrop {
 }
 
 .how-to-help__header {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   height: auto;
   text-align: center;
   justify-content: center;
@@ -430,7 +430,7 @@ dialog::backdrop {
   margin-bottom: 25px;
   flex: 1;
   font-weight: 400;
-  font-family: "Bebas Neue", cursive, sans-serif;
+  font-family: 'Bebas Neue', cursive, sans-serif;
 }
 
 .how-to-help__header-text span {
@@ -478,7 +478,7 @@ dialog::backdrop {
 }
 
 .upcoming-events__header {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   height: auto;
   text-align: center;
   justify-content: center;
@@ -492,7 +492,7 @@ dialog::backdrop {
   margin-bottom: 25px;
   flex: 1;
   font-weight: 400;
-  font-family: "Bebas Neue", cursive, sans-serif;
+  font-family: 'Bebas Neue', cursive, sans-serif;
 }
 
 .upcoming-events__header-text span {
@@ -537,7 +537,9 @@ dialog::backdrop {
 .container__slide-buttons button:nth-child(2) {
   padding: 10px;
 }
-
+.container__slide-buttons .fas {
+  font-size: 25px;
+}
 .item-video {
   aspect-ratio: 16 / 9;
 }
@@ -549,13 +551,13 @@ dialog::backdrop {
 }
 
 .contactUs {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-top: 1px solid var(--font-light);
   text-align: center;
 }
 
 .contactUs__header-text {
-  font-family: "Bebas Neue", cursive, sans-serif;
+  font-family: 'Bebas Neue', cursive, sans-serif;
   font-size: 42px;
 }
 
@@ -628,13 +630,13 @@ footer .footer__text {
 }
 
 footer .footer__text span {
-  font-family: "Bebas Neue", cursive, sans-serif;
+  font-family: 'Bebas Neue', cursive, sans-serif;
   color: var(--accent-color);
   font-size: 18px;
 }
 
 footer .footer__text {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
 
@@ -646,7 +648,7 @@ footer .footer__text {
 
 #whoWeServe p {
   text-align: left;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
 }
 .boardMember_wrapper {
