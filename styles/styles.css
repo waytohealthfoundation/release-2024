@@ -540,6 +540,9 @@ dialog::backdrop {
 .container__slide-buttons .fas {
   font-size: 25px;
 }
+.container__slide-buttons .fas {
+  font-size: 25px;
+}
 .item-video {
   aspect-ratio: 16 / 9;
 }
