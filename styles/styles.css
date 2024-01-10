@@ -453,6 +453,7 @@ dialog::backdrop {
 
 .how-to-help__body {
   padding: 0 30px;
+  display: flex;
 }
 
 .how-to-help__body p {
@@ -460,7 +461,9 @@ dialog::backdrop {
   padding: 0 20px;
   overflow-wrap: normal;
   text-align: left;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 18px;
+
 }
 
 .youtube {
