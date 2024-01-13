@@ -352,6 +352,7 @@ dialog::backdrop {
   margin: 30px 45px 20px 50px;
   padding: 0 30px;
 }
+
 .missionTrips__header-text {
   line-height: 0.8;
   font-size: 42px;
@@ -363,14 +364,17 @@ dialog::backdrop {
   color: var(--accent-color);
 }
 
-/* Scripture Css */
-
 .scripture {
-  font-size: larger;
+  border: solid 1px transparent;
+  font-family: "Raleway", sans-serif;
+  margin: 50px 45px 60px 45px;
+  padding: 0 30px;
+  overflow-wrap: normal;
   text-align: center;
-  width: 70%;
-  margin: 0 auto;
+  font-weight: 700;
+  font-size: 18px;
 }
+
 /* embeded video carousel */
 /* *********************** */
 
@@ -471,7 +475,6 @@ dialog::backdrop {
   text-align: left;
   font-weight: 700;
   font-size: 18px;
-
 }
 
 .youtube {
