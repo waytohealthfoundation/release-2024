@@ -187,6 +187,19 @@
   padding: 0 10px;
 }
 
+.vision-values-block {
+  display: flex;
+  margin-left: auto;
+  gap: 10%;
+  max-width: 80%;
+  font-family: "Raleway", sans-serif;
+}
+
+.vision-values-block div {
+  width: 100%;
+  height: 100%;
+}
+
 .contracted {
   max-height: 282px;
   overflow: hidden;
@@ -682,7 +695,11 @@ footer .footer__text {
   text-align: left;
   font-family: "Raleway", sans-serif;
   text-align: left;
+  column-count: 2;
+  margin: 30px 45px 20px 35px;
+  padding: 0 20px;
 }
+
 .boardMember_wrapper {
   display: flex;
   justify-content: center;
