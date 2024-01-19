@@ -688,23 +688,57 @@ footer .footer__text {
 /* ABOUT PAGE */
 
 #whoWeServe {
-  margin-top: 15%;
+  margin-top: 12%;
 }
 
 #whoWeServe p {
   text-align: left;
   font-family: "Raleway", sans-serif;
-  text-align: left;
   column-count: 2;
   margin: 30px 45px 20px 35px;
+  padding: 50px 20px 30px 20px;
+  column-gap: 50px;
+}
+
+#whoWeAre {
+  margin-top: 2%;
+}
+
+.vision-values-block {
+  text-align: left;
+  margin: 30px auto;
+}
+
+.vision-values-block p {
+  font-family: "Raleway", sans-serif;
+  overflow-wrap: normal;
+  font-weight: 500;
+  font-size: 18px; 
+}
+
+.statement {
+  margin: 0 30px;
   padding: 0 20px;
+}
+.faith li {
+  font-family: "Raleway", sans-serif;
+  overflow-wrap: normal;
+  font-weight: 500;
+  font-size: 18px; 
+}
+
+#boardMembers {
+  margin-top: 5%;
 }
 
 .boardMember_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
+
 .boardMember_card {
   display: flex;
   flex-direction: column;
@@ -717,19 +751,44 @@ footer .footer__text {
   box-shadow: 0 8px 36px 0 #404045;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-  height: 650px;
+  height: 1000px;
 }
 
+.boardMember_bio {
+  font-family: "Raleway", sans-serif;
+  overflow-wrap: normal;
+  font-weight: 500;
+  font-size: 18px; 
+}
+
+
 /* UTILITY CSS */
+
+.block-text-header {
+  line-height: 1.1;
+  font-size: 75px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  flex: 1;
+  font-weight: 400;
+  font-family: "Bebas Neue", cursive, sans-serif;
+  text-align: center;
+}
+
+.block-text-header span {
+  color: var(--accent-color);
+}
 
 .block-text {
   margin: 10px 0 30px;
   padding: 0 10px;
+  overflow-wrap: normal;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.block-text-header {
-  font-size: xx-large;
-  padding: 0 10px;
+h2 {
+  font-family: "Bebas Neue", cursive, sans-serif;
 }
 
 /* Our Team */
@@ -766,7 +825,7 @@ footer .footer__text {
   overflow-wrap: normal;
   text-align: left;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* Flip Card */
@@ -904,7 +963,7 @@ footer .footer__text {
   overflow-wrap: normal;
   text-align: left;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .public-documents__body a i {
