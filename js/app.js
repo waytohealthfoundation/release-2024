@@ -2,18 +2,21 @@ import { buildCarousel, makeCaroButtons } from "./buildCarousel.js";
 
 const body = document.body;
 const navToggle = document.querySelector("#navToggle");
-const nav = document.querySelector("#navLinks");
+const nav = document.getElementById("navLinks");
 const viewSize = window.innerWidth;
 
 let lastScroll = 0;
+try {
+  const caroHolder = document.getElementById("videos-carousel-wrapper"); // This is a slightly safer way to get a single reference to the carousel holder
+  let caro = buildCarousel();
 
-const caroHolder = document.getElementById("videos-carousel-wrapper"); // This is a slightly safer way to get a single reference to the carousel holder
-let caro = buildCarousel();
+  caroHolder.appendChild(caro);
 
-caroHolder.appendChild(caro);
-
-let caroButtons = makeCaroButtons();
-caroHolder.appendChild(caroButtons);
+  let caroButtons = makeCaroButtons();
+  caroHolder.appendChild(caroButtons);
+} catch (e) {
+  console.error(e);
+}
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
