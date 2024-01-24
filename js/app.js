@@ -1,13 +1,12 @@
 import { buildCarousel, makeCaroButtons } from "./buildCarousel.js";
 
 const body = document.body;
-const navToggle = document.querySelector("#navToggle");
-const nav = document.getElementById("navLinks");
+
 const viewSize = window.innerWidth;
 
 let lastScroll = 0;
 try {
-  const caroHolder = document.getElementById("videos-carousel-wrapper"); // This is a slightly safer way to get a single reference to the carousel holder
+  const caroHolder = document.getElementById("videos-carousel-wrapper");
   let caro = buildCarousel();
 
   caroHolder.appendChild(caro);
@@ -17,6 +16,39 @@ try {
 } catch (e) {
   console.error(e);
 }
+
+// *** Navbar ***
+
+const navbar = document.getElementById("divNav");
+
+navbar.innerHTML = `<div class="flex-nav">
+<div class="nav-header">
+  <div class="nav-logo">
+    <img src="../assets/WayToHealth_Logo.svg" alt="Way To Health Logo">
+  </div>
+
+  <button class="nav-toggle" id="navToggle">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+<div class="nav-links" id="navLinks">
+  <ul>
+    <li class="nav-link"><a href="/">Home</a></li>
+    <li class="nav-link"><a href="/pages/about.html">About</a></li>
+    <li class="nav-link"><a href="/pages/ourwork.html">Our Work</a></li>
+    <li class="nav-link">
+      <a href="/pages/howtohelp.html">How to Help</a>
+    </li>
+    <li class="nav-link">
+      <a href="/pages/newsletter.html">Newsletter</a>
+    </li>
+    <li class="nav-link"><a href="/pages/gallery.html">Gallery</a></li>
+  </ul>
+</div>
+</div>`;
+
+const navToggle = document.querySelector("#navToggle");
+const nav = document.getElementById("navLinks");
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
