@@ -737,13 +737,13 @@ footer .footer__text {
   align-items: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .boardMember_card {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  flex: 1;
   margin: 20px 15px;
   padding: 20px 25px;
   border: 1px solid var(--font-light);
@@ -751,7 +751,21 @@ footer .footer__text {
   box-shadow: 0 8px 36px 0 #404045;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-  height: 1000px;
+  height: 800px;
+  width: 380px;
+  margin-top: 30px;
+}
+
+.boardMember_image img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.boardMember_card h2 {
+  margin-top: 40px;
+  padding-left: 10px;
 }
 
 .boardMember_bio {
@@ -759,6 +773,27 @@ footer .footer__text {
   overflow-wrap: normal;
   font-weight: 500;
   font-size: 18px; 
+  margin: 10px 20px 10px 0px;
+  padding: 0px 20px 0px 10px;
+  width: 340px;
+  height: 370px;
+  overflow-y: auto;
+}
+
+.boardMember_bio::-webkit-scrollbar {
+  width: 10px;
+}
+
+.boardMember_bio::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+.boardMember_bio::-webkit-scrollbar-thumb {
+  background: var(--call-to-action)
+}
+
+.boardMember_bio::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-color);
 }
 
 
@@ -837,9 +872,10 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   margin-top: 70px;
   margin-bottom: 70px;
+  padding: 0px 20px 0px 20px;
 }
 
 .flip-card {
@@ -847,6 +883,7 @@ h2 {
   width: 300px;
   height: 350px;
   perspective: 1000px;
+  border-radius: 10px;
 }
 
 .flip-card-inner {
@@ -870,6 +907,7 @@ h2 {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 .flip-card-front {
@@ -879,6 +917,7 @@ h2 {
 .flip-card-front img {
   width: 300px;
   height: 280px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .flip-card-front h1 {
@@ -937,28 +976,11 @@ h2 {
 
 .public-documents__body {
   padding: 0 30px;
-}
-
-.public-documents__body h3 {
-  text-align: left;
-  margin-left: 80px;
-}
-
-.public-documents__body a {
-  margin: 30px 45px 20px 35px;
-  padding: 0 20px;
-  overflow-wrap: normal;
-  text-align: left;
-  font-weight: 500;
-}
-
-.public-documents__body span a {
-  margin-left: 0;
-  padding-left: 0;
+  text-align: center;
 }
 
 .public-documents__body p {
-  margin: 30px 45px 20px 35px;
+  margin: 30px 45px 20px 75px;
   padding: 0 20px;
   overflow-wrap: normal;
   text-align: left;
@@ -966,7 +988,55 @@ h2 {
   font-size: 18px;
 }
 
-.public-documents__body a i {
+.public-document__link {
+  border: solid 1px transparent;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  margin-bottom: 0px;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-right: auto;
+  padding: 0 50px;
+}
+
+.link-wrapper {
+  border: solid 1px transparent;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.public-documents__link h3 {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.view, .download a {
+  margin: 0px 5px 0px 15px;
+  padding: 0 20px;
+  overflow-wrap: normal;
+  text-align: left;
+  font-weight: 500;
+}
+
+.download a i {
   color: var(--accent-color);
   margin-right: 15px;
 }
+
+.view a i {
+  color: var(--accent-color);
+  margin-right: 15px;
+}
+
