@@ -704,7 +704,7 @@ footer .footer__text {
   font-family: "Raleway", sans-serif;
   overflow-wrap: normal;
   font-weight: 500;
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 .statement {
@@ -715,7 +715,7 @@ footer .footer__text {
   font-family: "Raleway", sans-serif;
   overflow-wrap: normal;
   font-weight: 500;
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 #boardMembers {
@@ -763,7 +763,7 @@ footer .footer__text {
   font-family: "Raleway", sans-serif;
   overflow-wrap: normal;
   font-weight: 500;
-  font-size: 18px; 
+  font-size: 18px;
   margin: 10px 20px 10px 0px;
   padding: 0px 20px 0px 10px;
   width: 340px;
@@ -780,13 +780,12 @@ footer .footer__text {
 }
 
 .boardMember_bio::-webkit-scrollbar-thumb {
-  background: var(--call-to-action)
+  background: var(--call-to-action);
 }
 
 .boardMember_bio::-webkit-scrollbar-thumb:hover {
   background: var(--bg-color);
 }
-
 
 /* UTILITY CSS */
 
@@ -998,7 +997,7 @@ h2 {
   border: solid 1px transparent;
   font-family: "Raleway", sans-serif;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1013,7 +1012,8 @@ h2 {
   font-size: 18px;
 }
 
-.view, .download a {
+.view,
+.download a {
   margin: 0px 5px 0px 15px;
   padding: 0 20px;
   overflow-wrap: normal;
@@ -1031,8 +1031,7 @@ h2 {
   margin-right: 15px;
 }
 
-.donations{
+/* TODO: This is because the scrolling with the fixed causes strangeness there is likely a better way to sort this out */
+.donations {
   margin-top: 90px;
-  height: 310px;
-  color: white;
 }
