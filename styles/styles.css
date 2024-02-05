@@ -1,7 +1,6 @@
 .scroll-down nav {
   transform: translate3d(0, -100%, 0);
   background-color: #1a1921;
-  background-color: #1a1921;
   filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 }
 
@@ -22,9 +21,7 @@
   flex-direction: column;
   border-top: 1px solid var(--font-light);
   border-bottom: 1px solid var(--font-light);
-  background-color: var(--bg-color);
-  margin-top: 2px;
-  padding: 0px 10px;
+  padding: 0 1rem;
 }
 
 .nav-logo {
@@ -56,6 +53,7 @@
   list-style: none;
   margin: 1.25rem 0;
   border-bottom: 2px solid whitesmoke;
+  font-family: "Bebas Neue", cursive, sans-serif;
   width: 300px;
   padding-left: 5px;
   position: relative;
@@ -81,13 +79,14 @@
 }
 
 .nav-active {
-  display: block;
   display: flex;
   place-content: center;
   background-color: var(--call-to-action);
   z-index: 10;
 }
 
+/* TODO: This is because the scrolling with the fixed causes strangeness there is likely a better way to sort this out */
+.donations,
 .hero-wrapper {
   margin-top: 90px;
 }
@@ -105,7 +104,6 @@
   background-blend-mode: luminosity;
   background-size: auto;
   background-position: right;
-  opacity: 0;
   animation: fade-in 3s forwards;
 }
 
@@ -125,6 +123,7 @@
   transform: translate(0%);
   color: var(--bg-color);
   font-size: 70px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .main__call-to-action {
@@ -136,43 +135,17 @@
   padding: 0.2rem 0.625rem;
   color: var(--font-light);
   background-color: var(--call-to-action);
-  cursor: pointer;
   transition: all 0.4s ease-in-out;
-  width: 12%;
-  text-align: center;
-  letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .main__call-to-action:hover {
   display: inline-block;
   color: var(--accent-color);
-  transform: translate(7px);
-}
-
-.main__sub p {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.75rem;
-  text-align: center;
-  margin: 0 0 30px;
-}
-
-.whoWeAre__header {
-  border-top: 1px solid var(--font-light);
-  border-bottom: 1px solid var(--font-light);
-  text-align: center;
-  position: relative;
-}
-
-.whoWeAre__header span {
-  color: var(--accent-color);
-}
-
-.whoWeAre__body {
-  position: relative;
+  transform: translate(0.5rem);
 }
 
 .whoWeAre__body p {
-  font-family: "Raleway", sans-serif;
   text-align: left;
   margin: 10px 0 30px;
   padding: 0 10px;
@@ -183,48 +156,6 @@
   margin-left: auto;
   gap: 10%;
   max-width: 80%;
-  font-family: "Raleway", sans-serif;
-}
-
-.vision-values-block div {
-  width: 100%;
-  height: 100%;
-}
-
-.contracted {
-  max-height: 282px;
-  overflow: hidden;
-}
-
-.contracted-2 {
-  max-height: 185px;
-  overflow: hidden;
-}
-
-.expanded {
-  max-height: 2000px;
-  overflow: hidden;
-  transition: all 1s linear;
-}
-
-.whoWeAre__header-text {
-  line-height: 0.8;
-  font-size: 2.62rem;
-  margin-top: 25px;
-  flex: 1;
-}
-
-.whoWeAre__header-logo {
-  flex: 1;
-}
-
-.whoWeAre__text::after {
-  content: "";
-  position: absolute;
-  transform: translate(0%);
-  width: 8rem;
-  height: 1px;
-  background-color: var(--font-light);
 }
 
 .weServe {
@@ -500,35 +431,11 @@ dialog::backdrop {
   -webkit-backdrop-filter: blur(2px);
 }
 
-.site-intro-text div {
-  font-size: xx-large;
-  padding: 0 10px;
-}
-
-.site-intro-text hr {
-  margin: 0 10px;
-}
-
-.upcoming-events__header {
-  font-family: "Raleway", sans-serif;
+.upcoming-events {
   height: auto;
   text-align: center;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.upcoming-events__header-text {
-  line-height: 1.1;
-  font-size: 75px;
-  margin-top: 30px;
-  margin-bottom: 25px;
-  flex: 1;
-  font-weight: 400;
-  font-family: "Bebas Neue", cursive, sans-serif;
-}
-
-.upcoming-events__header-text span {
-  color: var(--accent-color);
 }
 
 .upcoming-events__body {
@@ -539,9 +446,7 @@ dialog::backdrop {
 .upcoming-events__body p {
   margin: 30px 45px 20px 35px;
   padding: 0 20px;
-  overflow-wrap: normal;
   text-align: left;
-  font-weight: 500;
 }
 
 .container__slide-buttons {
@@ -564,18 +469,13 @@ dialog::backdrop {
   cursor: pointer;
 }
 
-.container__slide-buttons button:nth-child(1) {
-  padding: 10px;
-}
-.container__slide-buttons button:nth-child(2) {
+.container__slide-buttons button:nth-child(n) {
   padding: 10px;
 }
 .container__slide-buttons .fas {
   font-size: 25px;
 }
-.container__slide-buttons .fas {
-  font-size: 25px;
-}
+
 .item-video {
   aspect-ratio: 16 / 9;
 }
@@ -584,42 +484,6 @@ dialog::backdrop {
   width: 100%;
   height: 100%;
   border-radius: 7px;
-}
-
-.contactUs {
-  font-family: "Raleway", sans-serif;
-  border-top: 1px solid var(--font-light);
-  text-align: center;
-}
-
-.contactUs__header-text {
-  font-family: "Bebas Neue", cursive, sans-serif;
-  font-size: 42px;
-}
-
-.contactUs__header-text span {
-  color: var(--accent-color);
-}
-
-.contactUs .contact-wrapper {
-  margin-top: 30px;
-}
-
-.contactUs .contact-wrapper div {
-  margin-top: 20px;
-}
-
-.contactUs .contact-wrapper i {
-  color: var(--call-to-action);
-  font-size: 42px;
-}
-
-.contactUs .contact-wrapper .contact-email {
-  color: var(--accent-color);
-}
-
-.contactUs .contact-forms {
-  margin-top: 30px;
 }
 
 footer {
@@ -644,19 +508,19 @@ footer .footer__socials span {
   flex: 1;
 }
 
-footer .footer__socials .socials-fb a {
+.socials-fb i {
   color: #1877f2;
 }
-footer .footer__socials .socials-tw a {
+/* .socials-tw i {
   color: #1c96e8;
 }
-footer .footer__socials .socials-ig a {
+.socials-ig i {
   color: #f65990;
 }
-footer .footer__socials .socials-wa a {
+.socials-wa i {
   color: #00c200;
-}
-footer .footer__socials .socials-yt a {
+} */
+.socials-yt i {
   color: #ff0000;
 }
 
@@ -671,20 +535,13 @@ footer .footer__text span {
   font-size: 18px;
 }
 
-footer .footer__text {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-}
-
 /* ABOUT PAGE */
 
 #whoWeServe {
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 #whoWeServe p {
-  text-align: left;
-  font-family: "Raleway", sans-serif;
   column-count: 2;
   margin: 30px 45px 20px 35px;
   padding: 50px 20px 30px 20px;
@@ -700,9 +557,8 @@ footer .footer__text {
   margin: 30px auto;
 }
 
-.vision-values-block p {
-  font-family: "Raleway", sans-serif;
-  overflow-wrap: normal;
+.vision-values-block p,
+.faith li {
   font-weight: 500;
   font-size: 18px;
 }
@@ -710,12 +566,6 @@ footer .footer__text {
 .statement {
   margin: 0 30px;
   padding: 0 20px;
-}
-.faith li {
-  font-family: "Raleway", sans-serif;
-  overflow-wrap: normal;
-  font-weight: 500;
-  font-size: 18px;
 }
 
 #boardMembers {
@@ -726,8 +576,7 @@ footer .footer__text {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 2.125rem 0;
   flex-direction: row;
   gap: 30px;
   flex-wrap: wrap;
@@ -760,8 +609,6 @@ footer .footer__text {
 }
 
 .boardMember_bio {
-  font-family: "Raleway", sans-serif;
-  overflow-wrap: normal;
   font-weight: 500;
   font-size: 18px;
   margin: 10px 20px 10px 0px;
@@ -785,6 +632,23 @@ footer .footer__text {
 
 .boardMember_bio::-webkit-scrollbar-thumb:hover {
   background: var(--bg-color);
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--font-light);
+  text-align: center;
+  gap: 1rem;
+}
+
+.contactUs .contact-wrapper i {
+  color: var(--call-to-action);
+  font-size: 42px;
+}
+
+.contactUs .contact-wrapper .contact-email {
+  color: var(--accent-color);
 }
 
 /* UTILITY CSS */
@@ -826,24 +690,6 @@ h2 {
   margin-bottom: 50px;
 }
 
-.our-team__header-text {
-  line-height: 1.1;
-  font-size: 75px;
-  margin-top: 30px;
-  margin-bottom: 35px;
-  flex: 1;
-  font-weight: 400;
-  font-family: "Bebas Neue", cursive, sans-serif;
-}
-
-.our-team__header-text span {
-  color: var(--accent-color);
-}
-
-.our-team__body {
-  padding: 0 30px;
-}
-
 .our-team__body p {
   margin: 30px 45px 20px 35px;
   padding: 0 20px;
@@ -862,10 +708,9 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  padding: 0px 20px 0px 20px;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 0 1.5rem;
 }
 
 .flip-card {
@@ -940,28 +785,12 @@ h2 {
 
 /* Public Documents */
 
-.public-documents__header {
+.public-documents {
   border: solid 1px transparent;
-  font-family: "Raleway", sans-serif;
   height: auto;
   text-align: center;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.public-documents__header-text {
-  line-height: 1.1;
-  font-size: 75px;
-  margin-top: 30px;
-  margin-bottom: 35px;
-  flex: 1;
-  font-weight: 400;
-  font-family: "Bebas Neue", cursive, sans-serif;
-}
-
-.public-documents__header-text span {
-  color: var(--accent-color);
+  margin: 3rem 0;
 }
 
 .public-documents__body {
@@ -978,32 +807,24 @@ h2 {
   font-size: 18px;
 }
 
-.public-document__link {
+.public-document__link,
+.link-wrapper {
   border: solid 1px transparent;
-  font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0%;
-  margin-bottom: 0px;
   flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
-  margin-right: auto;
-  padding: 0 50px;
+}
+
+.public-document__link {
+  margin: 0 auto;
+  padding: 0 3rem;
 }
 
 .link-wrapper {
-  border: solid 1px transparent;
-  font-family: "Raleway", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  flex-direction: row;
-  gap: 10px;
-  flex-wrap: wrap;
+  margin: 1.5rem 0;
 }
 
 .public-documents__link h3 {
@@ -1021,17 +842,7 @@ h2 {
   font-weight: 500;
 }
 
-.download a i {
+a i {
   color: var(--accent-color);
   margin-right: 15px;
-}
-
-.view a i {
-  color: var(--accent-color);
-  margin-right: 15px;
-}
-
-/* TODO: This is because the scrolling with the fixed causes strangeness there is likely a better way to sort this out */
-.donations {
-  margin-top: 90px;
 }
