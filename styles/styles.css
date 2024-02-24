@@ -847,6 +847,32 @@ a i {
   margin-right: 15px;
 }
 
+/* Gallery */
+
+.main-gallery {
+  margin-top: 10rem;
+}
+.main-gallery header {
+  height: 10rem;
+}
+.gallery-images {
+  height: 100rem;
+  background-color: var(--call-to-action);
+  width: 100vw;
+  max-width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.gallery-images .images {
+  width: 75%;
+  background-color: white;
+  border-radius: 10px;
+  height: 350px;
+  color: black;
+  margin: 3rem auto;
+}
+
 /* NEWSLETTER */
 .flex { display: flex }
 .news-main { width: 65vw }
